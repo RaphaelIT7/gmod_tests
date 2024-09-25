@@ -27,7 +27,7 @@ return {
                 expect( coroutine.status( co ) ).to.equal( "suspended" )
 
                 print("sv_hibernate_think:", GetConVar("sv_hibernate_think"):GetBool())
-                timer.Simple( 0.5, function()
+                timer.Create("JustSomeTimerToHopefullyWork!", 0.5, 1, function()
                     print("TImer executed!")
                     ran, ret = coroutine.resume( co )
                     expect( ran ).to.beTrue()
