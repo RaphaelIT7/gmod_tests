@@ -13,9 +13,9 @@ on:
 
 jobs:
   run-mainbranch-tests:
-    uses: CFC-Servers/GLuaTest/.github/workflows/run_tests.yml@main
+    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests.yml@patch-1-test
 
   run-64bit-tests:
-    uses: CFC-Servers/GLuaTest/.github/workflows/run_tests.yml@main
+    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests.yml@patch-1-test
     with:
       branch: x86-64
