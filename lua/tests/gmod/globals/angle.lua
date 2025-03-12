@@ -118,7 +118,7 @@ return {
                 expect( nonNumberStringYawAngle.yaw ).to.equal( 0 )
                 expect( nonNumberStringYawAngle.roll ).to.equal( 22 )
             end
-        },
+        }
         {
             name = "Nil roll falls back to 0",
             func = function()
