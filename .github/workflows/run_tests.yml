@@ -13,9 +13,9 @@ on:
 
 jobs:
   run-mainbranch-tests:
-    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests.yml@patch-1-test
+    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests.yml@test-main
 
   run-64bit-tests:
-    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests.yml@patch-1-test
+    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests.yml@test-main
     with:
       branch: x86-64
