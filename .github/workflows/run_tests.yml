@@ -4,18 +4,21 @@ on:
   pull_request:
     paths:
       - lua/**
+      - ".github/workflows/run_tests.yml"
   push:
     branches:
       - main
+      - randomtesting
     paths:
       - lua/**
+      - ".github/workflows/run_tests.yml"
   workflow_dispatch:
 
 jobs:
   run-mainbranch-tests:
-    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests_runnerimprovements.yml@holylib
+    uses: CFC-Servers/GLuaTest/.github/workflows/run_tests.yml@feature/runner-improvement
 
   run-64bit-tests:
-    uses: RaphaelIT7/GLuaTest/.github/workflows/run_tests_runnerimprovements.yml@holylib
+    uses: CFC-Servers/GLuaTest/.github/workflows/run_tests.yml@feature/runner-improvement
     with:
       branch: x86-64
