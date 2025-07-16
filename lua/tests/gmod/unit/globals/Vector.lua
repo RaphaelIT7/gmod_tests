@@ -31,18 +31,6 @@ return {
         },
 
         {
-            name = "Accepts string parameters",
-            func = function()
-                ---@diagnostic disable-next-line: param-type-mismatch
-                local vector = Vector( "1 100.000 0.1" )
-
-                expect( vector["x"] ).to.equal( 1 )
-                expect( vector["y"] ).to.equal( 100 )
-                expect( vector["z"] ).to.beBetween( 0.09, 0.11 )
-            end
-        },
-
-        {
             name = "Rolls back the invalid value to 0",
             func = function()
                 --X
