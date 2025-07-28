@@ -11,8 +11,8 @@ on:
 
   # Depending on the longest run, this should be about ~10m after GLuaTest's automatic check:
   # https://github.com/CFC-Servers/GLuaTest/blob/main/.github/workflows/check_for_updates.yml#L12
-  schedule:
-    - cron: "28 */12 * * *"
+  # schedule:
+  #  - cron: "28 */12 * * *"
 
 env:
   BRANCH_MAP: >
